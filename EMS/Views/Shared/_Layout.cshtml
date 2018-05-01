@@ -1,0 +1,35 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="@Url.Content("~/js/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/Comman.js")" type="text/javascript"></script>
+    
+    <link href="@Url.Content("~/css/Comman.css")" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="main-bg">
+        <div id="wrapper">
+            <!--HEADER START-->
+            @Html.Partial("_menu")
+            <!--HEADER END-->
+
+            <!--CONTENT START-->
+
+            @RenderBody()
+
+            <!--CONTENT END-->
+
+            <!--FOOTER START-->
+
+@*            @Html.Partial("_SiteFooter")*@
+            <!--FOOTER END-->
+        </div>
+    </div>
+</body>
+</html>
+
